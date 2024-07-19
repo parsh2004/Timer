@@ -1,0 +1,96 @@
+#root {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding: 2rem;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  width: 100%;
+  background-size: cover;
+  background-image: url('/public/image.jpg');
+  background-color: aqua;
+  color: rgb(255, 255, 255);
+  font-family: "Times New Roman",cursive;
+  
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+  
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #282fb0aa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  background: rgba(255, 215, 0, 0.614);
+  margin-top: 15rem;
+  padding: 2em;
+  border-radius: 7px;
+  box-shadow: 0 8px 8px rgba(255, 174, 0, 0.982);
+  text-align: center;
+}
+
+.time {
+  font-size: 5rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  margin: 0 0.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+
+button:not(:disabled):hover {
+  background-color: #DAA520;
+}
+
+button:nth-child(1) {
+  background-color: rgb(210,105,30);
+  color: white;
+}
+
+button:nth-child(2) {
+  background-color: rgb(210,105,30);
+  color: white;
+}
+
+button:nth-child(3) {
+  background-color: rgb(210,105,30);
+  color: white;
+}
